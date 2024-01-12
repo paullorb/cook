@@ -70,7 +70,8 @@ aside {
   flex-direction: column;
   justify-content: space-around;
   border-radius: 1rem;
-  box-shadow: 3px 1px 5px 0px rgba(0, 0, 0, 0.75)
+  box-shadow: 3px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 100;
 }
 
 aside ul {
