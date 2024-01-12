@@ -1,18 +1,197 @@
-html {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --gap: 1rem;
+    --navbar-height: 4rem;
+}
+
+html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    border: 1px solid green;
+    border: 5px solid green;
+}
+
+.logo_div {
+    height: var(--navbar-height);
+    border: 5px solid aqua;
+    flex-grow: 1;
+    text-align: center;
+     & img {
+        position: absolute;
+     }
 }
 
 nav {
-    border: 1px solid red;
-
+    display: flex;
+    gap: var(--gap);
+    justify-content: flex-end;
+    align-items: center;
+    height: var(--navbar-height);
+    flex-grow: 3;
+    border: 5px solid red;
     & a {
         text-decoration: none;
         color: black;
+        padding: 0.7rem;
+        border: 5px solid black;
+        border-radius: 1rem;
+        transition: all 0.3s ease;
+        &:hover {
+            color: red;
+            border-radius: 0;
         }
     }
 }
+header {
+    display: flex;
+    border: 5px solid blue;
+    height: 10svh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid yellow;
+    height: 20vh;
+}
+
+
+aside {
+  width: 15rem;
+  height: 80vh;
+  background: rgba(255, 0, 0, 0.739);
+  position: fixed;
+  top: 10vh;
+  right: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 1rem;
+  box-shadow: 3px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 100;
+}
+
+aside ul {
+  padding-inline-start: 0;
+}
+
+aside ul li {
+  list-style: none;
+  font-size: 18px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+aside ul li .fas {
+  width: 50px;
+}
+
+.aside-wrapper {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.logo-text {
+  font-size: 2rem;
+  position: relative;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 0;
+  left: 30%;
+  background: green;
+  padding: 20px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+    &:hover {
+        opacity: 1;
+    }
+    &::before {
+        content: "ñami stuff";
+        color: white;
+    }
+}
+
+#toggler {
+  display: none;
+}
+
+
+input:checked ~ aside {
+  left: -250px;
+}
+
+section {
+    width: 100%;
+    height: 450px;
+    background: #ccc;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide-show-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  /* CSS Styles in common for all slides */
+  .wrapper-one,
+  .wrapper-two,
+  .wrapper-three {
+    background-color: #eee;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  /* CSS Styles for each slide */
+  /* Just add the image as background attribute and add some animation */
+  
+  .wrapper-one {
+      background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D");
+  }
+  
+  .wrapper-two {
+      background-image: url("https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D");
+    animation: slideTwoAnim 20s infinite;
+  }
+  
+  .wrapper-three {
+      background-image: url("https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZvb2R8ZW58MHx8MHx8fDA%3D");
+    animation: slideThreeAnim 20s infinite;
+  }
+  
+  /* Styles for the text */
+  .wrapper-text {
+    font: 700 40px/1.4 Roboto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+  }
+  
+  /* Animations */
+  @keyframes slideTwoAnim {
+      0%{opacity:0;}
+      17%{opacity:0;}
+      33%{opacity:1;}
+      50%{opacity:1;}
+      67%{opacity:0;}
+      100%{opacity:0;}
+  }
+  
+  @keyframes slideThreeAnim {
+      0%{opacity:0;}
+      50%{opacity:0;}
+      67%{opacity:1;}
+      83%{opacity:1;}
+      100%{opacity:0;}
+  }

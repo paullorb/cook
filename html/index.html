@@ -7,9 +7,9 @@
     </head>
     <body>
         <header>
-            <section class="logo">
-                <h1>Cookbook</h1>
-            </section>
+            <div class="logo_div">
+                <img src="" alt="logo">
+            </div>
             <nav>
                 <a href="">Home</a>
                 <a href="">Recipes</a>
@@ -17,7 +17,40 @@
                 <a href="">Contact</a>
             </nav>
         </header>
+        <input type="checkbox" id="toggler" />
+        <aside class="aside-wrapper">
+          <h1 class="logo-text"><span>Cookbook</span> <label for="toggler"><i class="fas fa-bars sidebar-toggle"></i></label></h1>
+        
+          <ul>
+            <li> Recipes</li>
+            <li> Recipe 1</li>
+            <li> Recipe 2</li>
+            <li> Recipe 3</li>
+            <li> Recipe 4</li>
+          </ul>
+        
+          <ul>
+            <li>more</li>
+            <li>and more</li>
+          </ul>
+        </aside>
         <main>
+            <section>
+                <div class="slide-show-container">
+                  <div class="wrapper-one">
+                    <div class="wrapper-text">Dummy Text</div>
+                  </div>
+                  <div class="wrapper-two">
+                    <div class="wrapper-text">Dummy Text Slide Two</div>
+                  </div>
+                  <div class="wrapper-three">
+                    <div class="wrapper-text">Dummy Text Slide Three</div>
+                  </div>
+                </div>
+              </section>
         </main>
+        <footer>
+            <p>footer text</p>
+        </footer>
     </body>
 </html>
