@@ -12,3 +12,6 @@ git push -u origin main
 ```
 ## excalidraw link
 [excalidraw](https://excalidraw.com/#room=4eae2ef32855340fabef,lrZlZmDwxMLgp89lHShhTQ)
+
+## check github projects for open tasks
+[github projects](https://github.com/users/paullorb/projects/3)
