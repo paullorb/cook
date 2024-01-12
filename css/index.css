@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --gap: 1rem;
+    --navbar-height: 4rem;
 }
 
 html {
@@ -10,31 +12,59 @@ html {
     border: 5px solid green;
 }
 
-nav {
-    border: 1px solid red;
+.logo_div {
+    height: var(--navbar-height);
+    border: 5px solid aqua;
+    flex-grow: 1;
+    text-align: center;
+     & img {
+        position: absolute;
+     }
+}
 
+nav {
+    display: flex;
+    gap: var(--gap);
+    justify-content: flex-end;
+    align-items: center;
+    height: var(--navbar-height);
+    flex-grow: 3;
+    border: 5px solid red;
     & a {
         text-decoration: none;
         color: black;
+        padding: 0.7rem;
+        border: 5px solid black;
+        border-radius: 1rem;
+        transition: all 0.3s ease;
+        &:hover {
+            color: red;
+            border-radius: 0;
         }
     }
-
+}
 header {
+    display: flex;
     border: 5px solid blue;
     height: 80svh;
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 5px solid yellow;
+    height: 20vh;
 }
 
 
 aside {
   width: 15rem;
-  height: 90vh;
+  height: 80vh;
   background: rgba(255, 0, 0, 0.739);
-  position: absolute;
-
+  position: fixed;
+  top: 10vh;
+  right: 0;
   color: white;
   display: flex;
   flex-direction: column;
@@ -69,9 +99,9 @@ aside ul li .fas {
 }
 
 .sidebar-toggle {
-  position: absolute;
-  top: 5px;
-  left: 205px;
+  position: fixed;
+  top: 0;
+  left: 30%;
   background: green;
   padding: 20px 20px;
   border-radius: 8px;
@@ -85,17 +115,13 @@ aside ul li .fas {
         content: "ñami stuff";
         color: white;
     }
-    &::after {
-        content: "";
-        display: none;
-    }
 }
 
-input {
+#toggler {
   display: none;
 }
 
-/* Toggler Functionality */
+
 input:checked ~ aside {
   left: -250px;
 }
