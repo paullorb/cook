@@ -11,12 +11,20 @@ html {
     font-size: 16px;
     border: 5px solid green;
 }
+@media only screen and (max-width: 30rem) {
+    html {
+        font-size: 14px;
+    }
+
+}
+
 
 .logo_div {
     height: var(--navbar-height);
     border: 5px solid aqua;
     flex-grow: 1;
     text-align: center;
+    min-width: 20%;
      & img {
         position: absolute;
      }
@@ -28,12 +36,12 @@ nav {
     justify-content: flex-end;
     align-items: center;
     height: var(--navbar-height);
-    flex-grow: 3;
+    flex-grow: 4;
     border: 5px solid red;
     & a {
         text-decoration: none;
         color: black;
-        padding: 0.7rem;
+        padding: 0.2rem;
         border: 5px solid black;
         border-radius: 1rem;
         transition: all 0.3s ease;
@@ -54,13 +62,13 @@ footer {
     justify-content: center;
     align-items: center;
     border: 5px solid yellow;
-    height: 20vh;
+    height: 20svh;
 }
 
 
 aside {
   width: 15rem;
-  height: 80vh;
+  height: 80svh;
   background: rgba(255, 0, 0, 0.739);
   position: fixed;
   top: 10vh;
@@ -101,8 +109,7 @@ aside ul li .fas {
 
 .sidebar-toggle {
   position: fixed;
-  top: 0;
-  left: 30%;
+  right: 0;
   background: green;
   padding: 20px 20px;
   border-radius: 8px;
@@ -127,9 +134,9 @@ input:checked ~ aside {
   left: -250px;
 }
 
-section {
+.gallery_images {
     width: 100%;
-    height: 450px;
+    height: 70svh;
     background: #ccc;
     margin: 0;
     padding: 0;
