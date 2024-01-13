@@ -46,7 +46,7 @@ nav {
 header {
     display: flex;
     border: 5px solid blue;
-    height: 10svh;
+    height: var(--navbar-height + 2rem);
 }
 
 footer {
