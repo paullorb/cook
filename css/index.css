@@ -21,12 +21,13 @@ html {
 
 .logo_div {
     height: var(--navbar-height);
-    border: 5px solid aqua;
+    /* border: 5px solid aqua; */
     flex-grow: 1;
     text-align: center;
-    min-width: 20%;
+    max-width: 20%;
+    background-color: #fef7e4;
      & img {
-        position: absolute;
+        height: 100%;
      }
 }
 
