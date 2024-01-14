@@ -26,6 +26,10 @@ html {
     text-align: center;
     max-width: 20%;
     background-color: #fef7e4;
+
+    &:hover {
+        background-color: #f9f1d9;
+    }
      & img {
         height: 100%;
      }
