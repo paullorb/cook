@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cookbook</title>
+        <title>Cook</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/banner.css">
+        <link rel="stylesheet" href="../css/aside.css">
         <link rel="stylesheet" href="../css/basic.css">
         <link rel="icon" href="../photos/cookbook_logo.png">
     </head>
@@ -36,7 +38,12 @@
         </header>
         <input type="checkbox" id="toggler" />
         <aside class="aside-wrapper">
-          <h1 class="logo-text"><span>Cookbook</span> <label for="toggler"><i class="fas fa-bars sidebar-toggle"></i></label></h1>
+          <h1 class="logo-text">
+            <span>Cookbook</span> 
+            <label for="toggler">
+              <i class="sidebar-toggle"></i>
+            </label>
+          </h1>
         
           <ul>
             <li> Recipes</li>
@@ -52,6 +59,50 @@
           </ul>
         </aside>
         <main>
+
+              <section class="index_table">
+                <table>
+                  <caption>Table Caption</caption>
+                  <thead>
+                    <tr>
+                      <th>Recipe</th>
+                      <th>Category</th>
+                      <th>Preparation Time</th>
+                      <th>Cooking Time</th>
+                      <th>Difficulty</th>
+                      <th>Rating</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Recipe 1</td>
+                      <td>Category 1</td>
+                      <td>Preparation Time 1</td>
+                      <td>Cooking Time 1</td>
+                      <td>Difficulty 1</td>
+                      <td>Rating 1</td>
+                    </tr>
+                    <tr>
+                      <td>Recipe 2</td>
+                      <td>Category 2</td>
+                      <td>Preparation Time 2</td>
+                      <td>Cooking Time 2</td>
+                      <td>Difficulty 2</td>
+                      <td>Rating 2</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>Footer content</td>
+                      <td>Footer content</td>
+                      <td>Footer content</td>
+                      <td>Footer content</td>
+                      <td>Footer content</td>
+                      <td>Footer content</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </section>
         </main>
         <footer>
             <p>footer text</p>
