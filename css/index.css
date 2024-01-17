@@ -33,10 +33,6 @@ aside ul li {
   cursor: pointer;
 }
 
-aside ul li .fas {
-  width: 50px;
-}
-
 .aside-wrapper {
   padding: 0 40px;
   box-sizing: border-box;
