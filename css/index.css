@@ -206,9 +206,3 @@ input:checked ~ aside {
       83%{opacity:1;}
       100%{opacity:0;}
   }
-
-.logo_div{
- display: flex;
- align-items: center;
- justify-content: center;
-}
