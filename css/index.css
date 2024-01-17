@@ -22,9 +22,6 @@ aside {
   z-index: 100;
 }
 
-.sidebar-toggle {
-  background-color: black !important;
-}
 aside ul {
   padding-inline-start: 0;
 }
@@ -47,7 +44,7 @@ aside ul li .fas {
 
 .sidebar-toggle {
   position: fixed;
-  right: 0;
+  left: 0;
   background: green;
   padding: 20px 20px;
   border-radius: 8px;
