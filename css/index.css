@@ -69,6 +69,7 @@ footer {
     height: 20svh;
 }
 
+/* All this has to go to aside.css*/
 
 aside {
   width: 15rem;
@@ -104,11 +105,6 @@ aside ul li .fas {
 .aside-wrapper {
   padding: 0 40px;
   box-sizing: border-box;
-}
-
-.toggler-text {
-  font-size: 2rem;
-  position: relative;
 }
 
 .sidebar-toggle {
