@@ -9,7 +9,6 @@
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    border: 5px solid green;
 }
 
 
@@ -26,16 +25,13 @@ nav {
     align-items: center;
     height: var(--navbar-height);
     flex-grow: 4;
-    border: 5px solid red;
   }
 
 .nav_logo {
     height: var(--navbar-height);
-    /* border: 5px solid aqua; */
     flex-grow: 1;
     text-align: center;
     max-width: 20%;
-    background-color: #fef7e4;
 
     &:hover {
         background-color: #f9f1d9;
@@ -64,8 +60,21 @@ nav {
 
 footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
     height: 20svh;
+    background-color: rgb(1, 0, 23);
+    & section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        max-width: 80rem;
+        margin: 0 auto;
+        gap: 0.5rem;
+        & a {
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
