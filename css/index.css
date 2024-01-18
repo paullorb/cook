@@ -4,9 +4,6 @@ header {
     flex-wrap:wrap
 }
 
-main {
-}
-
 .index_table table {
   display: relative;
   border: 1px solid black;
