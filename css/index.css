@@ -26,3 +26,24 @@ main {
     padding: 1rem;
   }
 }
+
+.cuisine_table table {
+    display: relative;
+    border: 1px solid black;
+    margin: 10rem auto;
+    & * {
+      text-align: center;
+    }
+  
+    & caption {
+      opacity: 0.5;
+    }
+  
+    & td {
+      border: 1px solid black;
+      width: 8rem;
+      height: 8rem;
+      padding: 1rem;
+    }
+  }
+}
