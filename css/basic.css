@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     --gap: 1rem;
-    --navbar-height: 4rem;
+    --navbar-height: 5rem;
+    --global-margin: 5rem;
 }
 
 html {
@@ -24,22 +25,26 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: var(--navbar-height);
-    flex-grow: 4;
-    margin: 1rem auto;
+    width: 100%;
+    margin: 1rem var(--global-margin);
   }
 
 .nav_logo {
     height: var(--navbar-height);
     flex-grow: 1;
-    text-align: center;
-    max-width: 20%;
+    margin: 0 4rem;
 
-    &:hover {
-        background-color: #f9f1d9;
-    }
      & img {
         height: 100%;
      } 
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 3;
+    gap: var(--gap);
 }
 
   .nav_menu a {
@@ -51,7 +56,7 @@ nav {
     transition: all 0.3s ease;
 
     &:last-of-type {
-        margin-right: 1rem;
+        margin-right: 2rem;
     }
 
     &:hover {
