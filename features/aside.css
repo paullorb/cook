@@ -1,0 +1,58 @@
+aside {
+    width: 15rem;
+    height: 80svh;
+    background: rgba(255, 0, 0, 0.739);
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 1rem;
+    box-shadow: 3px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    z-index: 100;
+  }
+  
+  aside ul {
+    padding-inline-start: 0;
+  }
+  
+  aside ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 20px 0;
+    cursor: pointer;
+  }
+  
+  .aside-wrapper {
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  
+  .sidebar-toggle {
+    position: fixed;
+    left: 0;
+    background: green;
+    padding: 20px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+      &:hover {
+          opacity: 1;
+      }
+      &::before {
+          content: "ñami stuff";
+          color: white;
+      }
+  }
+  
+  #toggler {
+    display: none;
+  }
+  
+  
+  input:checked ~ aside {
+    left: -250px;
+  }
