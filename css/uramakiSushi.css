@@ -188,17 +188,18 @@
     align-items: center;
     justify-content: center;
     
+    
     }
    
    #main__img{
    /* padding-top: 3rem; */
-    max-width: 600px;
-    max-height: 460px;
+    max-width: 550px;
+    max-height: 500px;
 
    }
 
    .small__card {
-    border: #0e53e7 solid 2px;
+    border: #3556b8 solid 2px;
     width: 35%;
    }
 
