@@ -73,3 +73,9 @@
       83%{opacity:1;}
       100%{opacity:0;}
   }
+
+.gallery_text {
+    display: flex;
+    margin: 2rem auto;
+    gap: 4px;
+}
