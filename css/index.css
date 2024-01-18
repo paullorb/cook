@@ -9,7 +9,7 @@ main {
   border: 5px solid aqua;
 }
 
-table {
+.index_table table {
   display: relative;
   border: 1px solid black;
   margin: 10rem auto;
