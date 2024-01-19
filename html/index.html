@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cook</title>
+        <title>Cookbook</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../css/index.css">
-        <link rel="stylesheet" href="../css/banner.css">
-        <link rel="stylesheet" href="../css/aside.css">
+        <link rel="stylesheet" href="../features/banner.css">
+        <link rel="stylesheet" href="../features/aside.css">
+        <link rel="stylesheet" href="../features/text.css">
         <link rel="stylesheet" href="../css/basic.css">
-        <link rel="icon" href="../photos/cookbook_logo.png">
+        <link rel="icon" href="../photos/icon/cookbook.png">
     </head>
     <body>
         <header>
             <nav>
               <section class="nav_logo">
-                <img src="../photos/cookbook_logo_16_9.png" alt="logo">
+                <a href="#"><img src="../photos/icon/cookbook.png" alt="logo"></a>
             </section>
             <section class="nav_menu">
-                <a href="">Home</a>
-                <a href="">Recipes</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
+                <a href="./index.html">Home</a>
+                <a href="#">Recipes</a>
+                <a href="./Aboutus.html">About</a>
             </section>
             </nav>
             <section class="gallery_images">
               <div class="slide-show-container">
-                <div class="wrapper-one">
-                  <div class="wrapper-text">Dummy Text</div>
+                <div class="wrapper-pizza">
+                  <div class="wrapper-text"></div>
                 </div>
-                <div class="wrapper-two">
-                  <div class="wrapper-text">Dummy Text Slide Two</div>
+                <div class="wrapper-burger">
+                  <div class="wrapper-text"></div>
                 </div>
-                <div class="wrapper-three">
-                  <div class="wrapper-text">Dummy Text Slide Three</div>
+                <div class="wrapper-sushi">
+                  <div class="wrapper-text"></div>
+                </div>
+                <div class="wrapper-bbq">
+                  <div class="wrapper-text"></div>
                 </div>
               </div>
             </section>
+            <!-- <section class="gallery_text">
+              <p>This Cookbook offers</p>
+              <p>pizza, </p>
+              <p> burger, </p>
+              <p>sushi, </p>
+              <p>bbq, </p>
+            </section> -->
         </header>
-        <input type="checkbox" id="toggler" />
+        <!-- <input type="checkbox" id="toggler" />
         <aside class="aside-wrapper">
           <h1 class="logo-text">
             <span>Cookbook</span> 
@@ -57,9 +67,19 @@
             <li>more</li>
             <li>and more</li>
           </ul>
-        </aside>
+        </aside> -->
         <main>
-
+          <section class="cuisine_table">
+            <table>
+              <caption>Our cookbook offers a variety of delights</caption>
+                <tr>
+                  <td><a href="./cuisine-1-Pizza.html"><img src="../photos/icon/pizza.png" alt="cuisine pizza" title="for pizza lovers"></a></td>
+                  <td><a href="./cuisine-2-Burger.html"><img src="../photos/icon/burger.png" alt="cuisine burger" title="for burger lovers"></a></td>
+                  <td><a href="./cuisine-3-Sushi.html"><img src="../photos/icon/sushi.jpg" alt="cuisine sushi" title="for sushi lovers"></a></td>
+                  <td><a href="./cuisine-4-BBQ.html"><img src="../photos/icon/bbq.png" alt="cuisine bbq" title="for bbq lovers"></a></td>
+                </tr>
+            </table>
+          </section>
               <section class="index_table">
                 <table>
                   <caption>Table Caption</caption>
@@ -105,7 +125,28 @@
               </section>
         </main>
         <footer>
-            <p>footer text</p>
+            <section class="footer_socials">
+                <a href="https://www.facebook.com/"><img src="../photos/icon/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="../photos/icon/instagram.png" alt="instagram"></a>
+                <a href="https://www.twitter.com/"><img src="../photos/icon/twitter.png" alt="twitter"></a>
+                <a href="https://www.youtube.com/"><img src="../photos/icon/youtube.png" alt="youtube"></a>
+            </section>
+            <section class="footer_contact">
+                <a href="">Contact</a>
+                <a href="">About</a>
+                <a href="">FAQ</a>
+            </section>
+            <section class="footer_cuisines">
+                <a href="">Pizza</a>
+                <a href="">Burger</a>
+                <a href="">Sushi</a>
+                <a href="">BBQ</a>
+            </section>
+            <section class="footer_pages">
+                <a href="">Home</a>
+                <a href="">Cuisines</a>
+                <a href="">About</a>
+            </section>
         </footer>
     </body>
 </html>
