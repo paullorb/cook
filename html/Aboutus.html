@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About us</title>
-    <link rel="stylesheet" href="/css/basic.css" />
-    <link rel="stylesheet" href="/css/Aboutus.css" />
-  </head>
+    <!-- Google fonts -->
+   
+   <link rel="stylesheet" href="/css/basic.css" />
+   <link rel="stylesheet" href="/css/Aboutus.css" />
+     </head>
   <body>
     <nav>
       <section class="nav_logo">
@@ -21,6 +23,9 @@
     </nav>
     <div class="main-about">
       <form>
+        <div>
+        <h2>Contact Us</h2>
+        </div>
         <div class="form-group">
           <input type="text" id="name" required />
           <label for="name">Your Name</label>
@@ -30,16 +35,27 @@
           <label for="email">Your Email</label>
         </div>
         <div class="form-group">
-          <input type="number" id="phone" />
+          <input type="text" id="phone" />
           <label for="phone">Your Phone</label>
         </div>
         <div class="form-group">
-          <textarea id="message" rows="10"></textarea>
+          <textarea id="message" rows="16"></textarea>
           <label for="message">Your Message</label>
         </div>
         <button type="submit">Sumbit</button>
+        <hr>
+        <div class="uploadcontainer">
+          <p>
+            If you see any missing ingredients in our recipe please message or upload
+            your file here.
+          </p>
+          <input type="file" id="uploadfile"/>
+          <label class="uploadfile" for="uploadfile">Upload file</label>
+          </div>
       </form>
     </div>
+    </div>
+
     <footer>
       <p>footer text</p>
     </footer>
